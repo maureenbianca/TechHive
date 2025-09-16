@@ -1,0 +1,17 @@
+# Redirect rules for TechHive website
+
+# Redirect www to non-www (or vice versa - choose your preference)
+https://www.techhive.co.ke/* https://techhive.co.ke/:splat 301!
+
+# Ensure HTTPS
+http://techhive.co.ke/* https://techhive.co.ke/:splat 301!
+http://www.techhive.co.ke/* https://techhive.co.ke/:splat 301!
+
+# Clean URL redirects (optional)
+/services /pages/services.html 200
+/about /pages/about.html 200
+/contact /pages/contact.html 200
+/blog /blog/index.html 200
+
+# 404 page (create one if needed)
+/* /index.html 404
