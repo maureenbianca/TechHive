@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://techhive.co.ke/sitemap.xml
+
+# Disallow admin or private directories (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all common search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay for overly aggressive bots
+User-agent: *
+Crawl-delay: 1
